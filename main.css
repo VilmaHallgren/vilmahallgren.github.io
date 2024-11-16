@@ -1,0 +1,298 @@
+body {
+  cursor: url("cursor-pink.png"), default;
+  background-image: url("img/blue-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER */
+
+.vi-logo {
+  max-width: 6rem;
+  margin-left: 2rem;
+}
+
+.vi-logo:hover {
+  cursor: url("cursor-pink.png"), default;
+}
+
+.navigation {
+  list-style-type: none;
+  margin-left: 66rem;
+  width: 100%;
+  display: inline;
+}
+
+.nav-links {
+  display: inline-block;
+  text-decoration: none;
+  color: #00a3cf;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #e40680;
+  cursor: url("cursor-blue.png"), default;
+  transform: scale(1.1);
+}
+
+li {
+  display: inline;
+  padding-left: 2rem;
+  font-size: 14pt;
+}
+
+.container-header {
+  position: fixed;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.vilmasvisualslogo {
+  max-width: 20%;
+  margin-left: 39%;
+  margin-top: 8rem;
+}
+
+.i-over-logo {
+  position: absolute;
+  width: 3%;
+  top: -60px;
+  left: 45.5%;
+  animation: moveI 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes moveI {
+  0% {
+    top: -60px;
+  }
+  70% {
+    top: 5rem;
+  }
+  100% {
+    top: 5.3rem;
+  }
+}
+
+/* MAIN */
+
+#hellomynameis {
+  text-align: center;
+  margin-left: 34rem;
+  margin-top: 4rem;
+  font-size: 32pt;
+  border-right: 5px solid;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(25) forwards,
+    cursor 0.4s step-end infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23ch;
+  }
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 45rem;
+  margin-top: 2rem;
+  margin-right: 44rem;
+  align-items: flex-end;
+  grid-row-gap: 1rem;
+}
+
+.mail-icon {
+  max-width: 30%;
+}
+
+.insta-icon {
+  max-width: 30%;
+}
+
+.tags {
+  margin: 0;
+}
+
+.link-ig {
+  text-decoration: none;
+  color: black;
+}
+
+.link-ig:hover {
+  cursor: url("cursor-blue.png"), default;
+}
+
+.my-recents {
+  text-align: center;
+  margin-top: 9rem;
+  font-size: 24pt;
+  margin-bottom: 3px;
+}
+
+#visit-port {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.artwork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  grid-column-gap: 5rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.artwork1 {
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.artwork1:hover {
+  transform: scale(1.06); /* Scales the image up by 10% */
+  box-shadow: 0 0 20px #e40680;
+}
+
+.artwork2 {
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.artwork2:hover {
+  transform: scale(1.06); /* Scales the image up by 10% */
+  box-shadow: 0 0 20px #e40680;
+}
+
+.artwork3 {
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.artwork3:hover {
+  transform: scale(1.06); /* Scales the image up by 10% */
+  box-shadow: 0 0 20px #e40680;
+}
+
+/* ABOUT ME PAGE */
+
+.aboutme-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.me-img {
+  width: 25%;
+  margin-top: 12rem;
+  margin-left: 17rem;
+}
+
+.aboutme-header {
+  margin-top: 11.5rem;
+  margin-left: 3rem;
+}
+
+.text-aboutme {
+  max-width: 40%;
+}
+
+#desc-aboutme {
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+.button-translate {
+  color: #00a3cf;
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 3rem;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: url("cursor-blue.png"), default;
+}
+
+.button-translate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* RESUME PAGE */
+
+.resume-container {
+  display: flex;
+}
+
+.resume-img {
+  width: 35%;
+  margin-top: 12rem;
+  margin-left: 35rem;
+  margin-bottom: 4rem;
+}
+
+#download-pdf {
+  margin-left: 48rem;
+  margin-top: 9rem;
+  position: absolute;
+  text-decoration: underline;
+}
+
+/* PORTFOLIO */
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 9rem;
+  margin-right: 13rem;
+  margin-bottom: 5rem;
+  padding-top: 10rem;
+  justify-items: center;
+}
+
+.portfolio-img {
+  width: 40%;
+}
+
+.portfolio-name {
+  font-family: "viktorie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30pt;
+  text-decoration: none;
+  color: black;
+  margin-top: 5rem;
+}
+
+.background-color {
+  background-color: rgba(94, 202, 231, 0.2);
+  width: 87rem;
+  height: 50rem;
+  position: fixed;
+  margin-top: 11rem;
+  margin-left: 10rem;
+  z-index: -1;
+}
