@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let button = document.querySelector("button");
+  let button = document.querySelector("button-translate");
   let textElement = document.getElementById("desc-aboutme");
 
   function buttonClick() {
