@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let button = document.querySelector("button");
   let textElement = document.getElementById("desc-aboutme");
-  button.addEventListener("click", buttonClick);
 
   function buttonClick() {
     const translations = {
@@ -17,4 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
       textElement.innerText = Object.keys(translations)[0];
     }
   }
+
+  button.addEventListener("click", buttonClick);
 });
